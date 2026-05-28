@@ -20,3 +20,6 @@ jobs:
           echo "SHA : ${{ github.sha }}"
           echo "Event : ${{ github.event_name }}"
           echo "==========================="
+          date
+          whoami
+          uname -a
