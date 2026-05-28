@@ -8,13 +8,12 @@ jobs:
     steps:
       - name: Dire bonjour
         run: echo "Bonjour depuis GitHub Actions !"
-    steps:
- - name: Informations contextuelles
- run: |
- echo "=== Contexte du workflow ==="
- echo "Repo : ${{ github.repository }}"
- echo "Branche : ${{ github.ref_name }}"
- echo "Acteur : ${{ github.actor }}"
- echo "SHA : ${{ github.sha }}"
- echo "Event : ${{ github.event_name }}"
- echo "==========================="
+      - name: Informations contextuelles
+        run: |
+        echo "=== Contexte du workflow ==="
+        echo "Repo : ${{ github.repository }}"
+        echo "Branche : ${{ github.ref_name }}"
+        echo "Acteur : ${{ github.actor }}"
+        echo "SHA : ${{ github.sha }}"
+        echo "Event : ${{ github.event_name }}"
+        echo "==========================="
